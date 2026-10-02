@@ -476,9 +476,9 @@ export default function HomePage() {
 
   return (
     <div className="flex flex-col min-h-screen">
-      {/* 1. SECTION 01: FULL-VIEWPORT HERO SHOWREEL VIDEO (EXACT 16:9 SIZING) */}
+      {/* 1. SECTION 01: FULL-VIEWPORT HERO SHOWREEL VIDEO (TEMPORARILY REMOVED AS REQUESTED — READY TO RESTORE ANYTIME) */}
+      {/*
       <section ref={heroRef} className="relative w-full h-screen h-[100vh] h-[100svh] min-h-[600px] overflow-hidden flex items-center justify-center bg-black select-none">
-        {/* Exact 16:9 Ratio YouTube Video Container */}
         <div className="absolute inset-0 z-0 w-full h-full overflow-hidden pointer-events-none flex items-center justify-center">
           <iframe
             ref={iframeRef}
@@ -491,7 +491,6 @@ export default function HomePage() {
           />
         </div>
 
-        {/* Sound Toggle Button (Always Visible & Accessible) */}
         <div className="absolute bottom-8 right-6 sm:bottom-10 sm:right-8 z-20 transition-all duration-300">
           <button
             onClick={toggleSound}
@@ -512,7 +511,6 @@ export default function HomePage() {
           </button>
         </div>
 
-        {/* Scroll Indicator */}
         <div
           className={`absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-1 transition-all duration-700 ease-in-out ${
             !isScrolled && isHeroIdle
@@ -524,6 +522,7 @@ export default function HomePage() {
           <ChevronDown className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-white/90 animate-bounce-slow" />
         </div>
       </section>
+      */}
 
       {/* 2. SECTION 02: FULL-VIEWPORT TAGLINE STATEMENT WITH 100% VIBRANT FULL OPACITY REVOLVING TAGS */}
       <section className="relative min-h-[100vh] w-full flex flex-col justify-center items-center pt-32 pb-12 sm:pt-44 sm:pb-16 bg-[var(--bg-main)] transition-colors duration-500 overflow-hidden select-none">
