@@ -14,13 +14,13 @@ interface ThemeContextType {
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
-  const [theme, setThemeState] = useState<Theme>("light");
+  const [theme, setThemeState] = useState<Theme>("dark");
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
     setMounted(true);
     const savedTheme = localStorage.getItem("tgs-theme") as Theme | null;
-    const initialTheme = savedTheme || "light";
+    const initialTheme = savedTheme || "dark";
     setThemeState(initialTheme);
     document.documentElement.classList.remove("light", "dark");
     document.documentElement.classList.add(initialTheme);
@@ -59,7 +59,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   };
 
   return (
-    <ThemeContext.Provider value={{ theme: mounted ? theme : "light", toggleTheme, setTheme, mounted }}>
+    <ThemeContext.Provider value={{ theme: mounted ? theme : "dark", toggleTheme, setTheme, mounted }}>
       {children}
     </ThemeContext.Provider>
   );
