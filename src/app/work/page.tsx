@@ -356,13 +356,13 @@ export default function WorkPage() {
   // Complete official showcase list matching exact user requested order
   const projectsList = [
     projectsData["cc-1"],  // 1. Hero Motors
-    projectsData["wcs-3"], // 2. Mystic Mann
+    projectsData["flm-1"], // 2. Outflow
     projectsData["fp-2"],  // 3. Natural Veneers
     projectsData["mv-1"],  // 4. Before The Fall (PRMT 1.O)
     projectsData["wcs-2"], // 5. Sakshisayys
     projectsData["cc-2"],  // 6. Ultimo
     projectsData["wcs-1"], // 7. Humming Bird
-    projectsData["flm-1"], // 8. Outflow
+    projectsData["wcs-3"], // 8. Mystic Mann
     projectsData["wcs-5"], // 9. Shalina Gupta
     projectsData["cc-4"],  // 10. Riddhi Khosla Jalan
     projectsData["wcs-4"], // 11. Eurotrend
